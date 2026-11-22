@@ -1,183 +1,54 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#07131a">
-  <meta name="description" content="Research portfolio of Junaid Zia, an Electrical Engineering graduate of Universiti Malaya, working across semiconductor devices, AI-assisted wafer inspection, and embedded systems.">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Junaid Zia — Research & Engineering Portfolio">
-  <meta property="og:description" content="From atomic layers to intelligent systems. Semiconductor devices, machine learning, and engineering research.">
-  <meta property="og:image" content="cover.png">
-  <meta name="color-scheme" content="dark">
-  <link rel="icon" href="favicon.svg" type="image/svg+xml">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;450;500;600;700&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="Junaid Zia — electrical engineering graduate and researcher working in semiconductor devices, applied AI and embedded systems.">
+  <meta name="theme-color" content="#F8F8F6"><meta property="og:type" content="website">
+  <meta property="og:title" content="Junaid Zia — Research & Engineering"><meta property="og:description" content="Semiconductor research, machine learning and electronic systems."><meta property="og:image" content="assets/mos2.svg">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Sans:wght@400;500;600;700&family=Outfit:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css"><script src="site-data.js" defer></script><script src="main.js" defer></script>
   <title>Junaid Zia — Research & Engineering</title>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="cursor-halo" aria-hidden="true"></div>
-  <header class="site-header" id="top">
-    <div class="container nav-bar">
-      <a href="#top" class="brand" aria-label="Junaid Zia, back to top">
-        <span class="brand-mark">J<span class="mark-slit">/</span>Z<span class="brand-dot">.</span></span>
-        <span class="brand-sub">RESEARCH<br>PORTFOLIO</span>
-      </a>
-      <nav class="nav-links" id="site-nav" aria-label="Main navigation">
-        <a href="#work">Research</a>
-        <a href="#projects">Projects</a>
-        <a href="#experience">Background</a>
-        <a href="#about">About</a>
-      </nav>
-      <a href="#connect" class="nav-cta">LET'S CONNECT <span aria-hidden="true">↗</span></a>
-      <button class="menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="site-nav"><span></span><span></span></button>
+<a class="skip-link" href="#main">Skip to content</a>
+<div class="reading-progress" id="reading-progress" aria-hidden="true"></div>
+<header class="site-header" id="top">
+  <div class="container header-inner">
+    <a class="wordmark" href="#top" aria-label="Junaid Zia home"><span class="wordmark-icon">J<span>·</span>Z</span><span class="wordmark-name">JUNAID ZIA <small>/ RESEARCH PORTFOLIO</small></span></a>
+    <button class="mobile-menu" id="mobile-menu" type="button" aria-label="Toggle navigation" aria-expanded="false" aria-controls="nav-menu"><span></span><span></span><span></span></button>
+    <nav id="nav-menu" aria-label="Primary"><a href="#about">About</a><a href="#research">Research</a><a href="#projects">Projects</a><a href="#recognition">Recognition</a><a href="#background">Background</a></nav>
+    <a class="header-contact" href="#contact">Get in touch <span aria-hidden="true">↗</span></a>
+  </div>
+</header>
+<main id="main">
+  <section class="hero section" id="about">
+    <div class="container hero-grid">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="red-signal"></span><span id="hero-eyebrow">ELECTRICAL ENGINEER · RESEARCH-LED BUILDER</span><span class="eyebrow-line"></span><span>01 / 05</span></div>
+        <h1 id="hero-headline">Engineering<br><em>across scales.</em></h1>
+        <p class="hero-lede" id="hero-intro">I work at the intersection of semiconductor device physics, applied machine learning and practical electronic systems.</p>
+        <p class="hero-description" id="hero-about"></p>
+        <div class="hero-links"><a href="#research" class="btn btn-primary">Explore research <span aria-hidden="true">↗</span></a><a href="#projects" class="text-link">Selected projects <span aria-hidden="true">↗</span></a></div>
+        <div class="identity-meta"><span class="meta-red">●</span><span id="hero-affiliation">Universiti Malaya</span><span class="meta-sep">/</span><span id="hero-location">Kuala Lumpur, Malaysia</span></div>
+      </div>
+      <div class="hero-aside">
+        <div class="portrait-frame"><img id="profile-photo" src="assets/portrait.svg" alt="Portrait illustration placeholder for Junaid Zia"><div class="portrait-corner">JZ<span class="portrait-cross">＋</span></div></div>
+        <div class="aside-caption"><span class="micro-red">PROFILE / 2026</span><span id="profile-status">Exploring graduate research opportunities · 2027</span></div>
+      </div>
     </div>
-  </header>
-
-  <main id="main">
-    <section class="hero section-frame" aria-labelledby="hero-heading">
-      <div class="hero-grid-glow" aria-hidden="true"></div>
-      <div class="container hero-layout">
-        <div class="hero-copy">
-          <div class="kicker"><span class="availability-dot" aria-hidden="true"></span> ELECTRICAL ENGINEER <span class="kicker-sep">/</span> RESEARCHER</div>
-          <h1 id="hero-heading">From <em>atomic layers</em><br>to intelligent<br><span class="hero-outline">systems<span class="terminal-dot">.</span></span></h1>
-          <p class="hero-subtitle">I study how things work at the smallest scale — then turn that understanding into practical engineering solutions.</p>
-          <p class="hero-bio">I'm <strong>Junaid Zia</strong>, an Electrical Engineering graduate from <strong>Universiti Malaya</strong>, exploring semiconductor device physics, machine learning, and embedded technologies.</p>
-          <div class="hero-actions">
-            <a class="button button-primary" href="#work"><span>Explore my research</span><span class="button-arrow" aria-hidden="true">↗</span></a>
-            <a class="button button-ghost" href="#about">A little about me <span aria-hidden="true">↗</span></a>
-          </div>
-          <div class="hero-stats" aria-label="Selected highlights">
-            <div class="hero-stat"><strong>01<span class="mint">.</span></strong><span>FIRST PRIZE<br><small>TI INNOVATION CHALLENGE</small></span></div>
-            <div class="stat-rule"></div>
-            <div class="hero-stat"><strong>Ag<span class="mint">.</span></strong><span>SILVER AWARD<br><small>UM IDEA FESTIVAL</small></span></div>
-            <div class="stat-rule"></div>
-            <div class="hero-stat"><strong>2026<span class="mint">.</span></strong><span>B.ENG GRADUATE<br><small>UNIVERSITI MALAYA</small></span></div>
-          </div>
-        </div>
-        <div class="hero-visual" aria-label="Abstract device research visualization">
-          <div class="visual-topline"><span><i></i> DEVICE STUDY / 001</span><span>RESEARCH / 2026</span></div>
-          <div class="lab-art">
-            <div class="crosshair crosshair-a" aria-hidden="true"></div>
-            <div class="crosshair crosshair-b" aria-hidden="true"></div>
-            <svg class="device-svg" viewBox="0 0 620 550" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Conceptual layered semiconductor transistor illustration">
-              <defs>
-                <linearGradient id="plane" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#6be5c0" stop-opacity="0.26"/><stop offset="1" stop-color="#6be5c0" stop-opacity="0.04"/></linearGradient>
-                <linearGradient id="oxide" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#89a6fa" stop-opacity=".44"/><stop offset="1" stop-color="#47677a" stop-opacity=".06"/></linearGradient>
-                <linearGradient id="source" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#e1fcad"/><stop offset="1" stop-color="#7ad6b8"/></linearGradient>
-                <filter id="glow"><feGaussianBlur stdDeviation="10"/></filter>
-              </defs>
-              <ellipse cx="316" cy="404" rx="215" ry="71" fill="#62dcb2" opacity=".07" filter="url(#glow)"/>
-              <g transform="translate(27 35)" stroke-linejoin="round">
-                <path d="M79 329 303 202 517 327 293 458Z" fill="#102b32" stroke="#567582" stroke-width="1.5"/>
-                <path d="M79 329 79 348 293 479 293 458Z" fill="#102027" stroke="#406272"/>
-                <path d="M293 458 517 327 517 347 293 479Z" fill="#17343c" stroke="#406272"/>
-                <path d="M100 281 303 167 492 280 290 395Z" fill="url(#oxide)" stroke="#7c9dae" stroke-opacity=".8"/>
-                <path d="M100 281 100 306 290 421 290 395Z" fill="#1c3140" stroke="#547a8b"/>
-                <path d="M290 395 492 280 492 306 290 421Z" fill="#203b46" stroke="#547a8b"/>
-                <path d="M118 231 303 128 477 231 290 338Z" fill="url(#plane)" stroke="#a7e7c5" stroke-opacity=".65" stroke-width="1.6"/>
-                <path d="M118 231 118 237 290 344 290 338Z" fill="#64d8ad" opacity=".5"/>
-                <path d="M290 338 477 231 477 237 290 344Z" fill="#64d8ad" opacity=".36"/>
-                <path d="M138 186 221 139 280 172 195 220Z" fill="url(#source)" stroke="#deffe1"/>
-                <path d="M138 186 138 222 195 256 195 220Z" fill="#6ba990"/>
-                <path d="M195 220 280 172 280 207 195 256Z" fill="#89cda7"/>
-                <path d="M308 171 393 122 450 156 366 204Z" fill="url(#source)" stroke="#deffe1"/>
-                <path d="M308 171 308 208 366 242 366 204Z" fill="#6ba990"/>
-                <path d="M366 204 450 156 450 190 366 242Z" fill="#8accaa"/>
-                <g opacity=".65" fill="#ccfee4">
-                  <circle cx="243" cy="215" r="3"/><circle cx="259" cy="224" r="3"/><circle cx="275" cy="232" r="3"/><circle cx="291" cy="241" r="3"/><circle cx="307" cy="249" r="3"/>
-                  <circle cx="259" cy="204" r="3"/><circle cx="275" cy="213" r="3"/><circle cx="291" cy="222" r="3"/><circle cx="307" cy="230" r="3"/><circle cx="323" cy="240" r="3"/>
-                </g>
-                <g stroke="#a5f3ce" stroke-width="1.6" fill="none" stroke-dasharray="4 7" opacity=".8"><path d="M250 177 310 145"/><path d="M263 274 339 317"/></g>
-                <g fill="#d6ffb6" font-family="monospace" font-size="14" letter-spacing="1.8"><text x="87" y="143">SOURCE</text><text x="402" y="104">DRAIN</text><text x="383" y="300">MoS₂</text></g>
-                <g fill="none" stroke="#8de4c0" stroke-width="1" opacity=".6"><path d="M142 149 142 175"/><path d="M424 111 414 132"/><path d="M380 286 353 265"/></g>
-              </g>
-            </svg>
-            <div class="art-annotation annotation-left"><span>STRUCTURE</span><strong>1L / 2L</strong><small>MONOLAYER<br>BILAYER</small></div>
-            <div class="art-annotation annotation-right"><span>INPUT</span><strong>ε 0–0.7%</strong><small>TENSILE STRAIN</small></div>
-            <div class="scan-line" aria-hidden="true"></div>
-          </div>
-          <div class="visual-bottomline"><span><span class="tiny-mint">●</span> COMSOL MULTIPHYSICS</span><span>ILLUSTRATIVE DEVICE SCHEMATIC</span></div>
-        </div>
-      </div>
-      <div class="container hero-bottom"><span>SCROLL TO EXPLORE</span><span class="vertical-arrow" aria-hidden="true">↓</span><span>01 — 05</span></div>
-    </section>
-
-    <section class="expertise-band" aria-label="Core fields"><div class="container expertise-row"><span class="band-label">AT THE INTERSECTION OF</span><span>SEMICONDUCTOR DEVICES</span><i></i><span>APPLIED AI</span><i></i><span>ENGINEERING SIMULATION</span><i></i><span>EMBEDDED SYSTEMS</span></div></section>
-
-    <section class="section work-section" id="work" aria-labelledby="work-heading">
-      <div class="container">
-        <div class="section-heading reveal"><span class="section-index">01 <span>/</span> RESEARCH</span><div><p class="overline">FEATURED CASE STUDY</p><h2 id="work-heading">Understanding<br><span class="serif-italic">what changes.</span></h2></div><p class="section-intro">From material physics to device response: measuring how strain changes transistor performance using numerical modelling.</p></div>
-        <article class="feature-card reveal" aria-labelledby="mos2-title">
-          <div class="feature-visual">
-            <div class="card-toplabel"><span>FIG. 01</span><span>SIMULATION RESULTS</span></div>
-            <div class="plot-title">ON-STATE CURRENT <span>(nA)</span></div>
-            <div class="bar-plot" role="img" aria-label="At zero and 0.7 percent strain, monolayer current increases from 66.24 to 122.85 nanoamps. Bilayer current increases from 188.76 to 252.34 nanoamps.">
-              <div class="plot-gridlines"><span>0</span><span>65</span><span>130</span><span>195</span><span>260</span></div>
-              <div class="bar-row"><div class="bar-row-label"><strong>1L MoS₂</strong><small>Monolayer</small></div><div class="bar-track"><div class="bar before" style="--percent:25.48%"><span>66.24</span></div><div class="bar after" style="--percent:47.25%"><span>122.85</span></div></div><div class="gain-tag">+85%</div></div>
-              <div class="bar-row"><div class="bar-row-label"><strong>2L MoS₂</strong><small>Bilayer</small></div><div class="bar-track"><div class="bar before" style="--percent:72.60%"><span>188.76</span></div><div class="bar after" style="--percent:97.05%"><span>252.34</span></div></div><div class="gain-tag">+34%</div></div>
-            </div>
-            <div class="plot-legend"><span><i class="legend-before"></i> 0% STRAIN</span><span><i class="legend-after"></i> 0.7% STRAIN</span></div>
-            <div class="feature-footnote">Selected simulated endpoints from the undergraduate FYP; not experimental measurements.</div>
-          </div>
-          <div class="feature-copy"><div class="tagline">FINAL YEAR RESEARCH <span>—</span> SEMICONDUCTOR PHYSICS</div><h3 id="mos2-title">Strain-dependent performance of mono- and bilayer <span>MoS₂ field-effect transistors.</span></h3><p>The question was deceptively simple: how does stretching a two-dimensional semiconductor change the behaviour of a transistor?</p><p>I built and analysed a numerical device model in COMSOL, examining how tensile strain affects current characteristics in monolayer versus bilayer MoS₂ channels.</p><div class="result-grid"><div><strong>1.85×</strong><small>MONOLAYER I<sub>ON</sub></small></div><div><strong>1.34×</strong><small>BILAYER I<sub>ON</sub></small></div></div><div class="mini-tags"><span>COMSOL</span><span>DEVICE PHYSICS</span><span>DRIFT–DIFFUSION</span><span>MoS₂</span></div><div class="inline-note"><span class="note-icon">✦</span> Silver Award · Universiti Malaya idea festival</div><a class="case-link" href="research.html">READ THE RESEARCH CASE STUDY <span aria-hidden="true">↗</span></a></div>
-        </article>
-      </div>
-    </section>
-
-    <section class="section project-section" id="projects" aria-labelledby="projects-heading">
-      <div class="container">
-        <div class="section-heading section-heading-simple reveal"><span class="section-index">02 <span>/</span> SELECTED PROJECTS</span><div><p class="overline">FROM RESEARCH TO APPLICATION</p><h2 id="projects-heading">Built to <span class="serif-italic">be useful.</span></h2></div></div>
-        <div class="project-grid">
-          <article class="project-card reveal">
-            <div class="project-art wafer-art" aria-label="Conceptual wafer classification visual">
-              <div class="project-art-title"><span>PROJECT / 02</span><span>AI × SEMICONDUCTORS</span></div>
-              <svg viewBox="0 0 520 280" class="wafer-svg" role="img" aria-label="Illustrative wafer grid and classified defect regions">
-                <defs><clipPath id="wafer-clip"><circle cx="258" cy="145" r="110"/></clipPath><radialGradient id="wafer-grad"><stop stop-color="#103b46"/><stop offset="1" stop-color="#091e29"/></radialGradient></defs>
-                <circle cx="258" cy="145" r="113" fill="#0a2330" stroke="#80d1bb" stroke-width="1.2"/><circle cx="258" cy="145" r="107" fill="url(#wafer-grad)" stroke="#4a8788" stroke-width="1"/>
-                <g id="wafer-cells" clip-path="url(#wafer-clip)"></g>
-                <path d="M354 83 411 44 475 44" stroke="#bbf0cb" stroke-width="1" fill="none" opacity=".6"/><circle cx="354" cy="83" r="3" fill="#d3f9a2"/>
-                <text x="411" y="36" fill="#c8eddf" font-family="monospace" font-size="11">PATTERN</text>
-                <text x="411" y="58" fill="#779ca6" font-family="monospace" font-size="9">DETECTED</text>
-              </svg>
-              <div class="project-art-bottom"><span>WAFER MAP / CLASSIFICATION</span><span>01–02</span></div>
-            </div>
-            <div class="project-text"><div class="project-heading-line"><p class="project-category">ENGINEERING INNOVATION</p><span class="project-award">1ST PRIZE</span></div><h3>Smarter wafer-defect inspection.</h3><p>An AI-assisted wafer-map classifier that connects defect detection to manufacturing decisions. I developed a TinyCNN-based prototype with an interactive Gradio interface and severity-oriented outputs.</p><div class="project-tags"><span>PYTHON</span><span>CONVOLUTIONAL NEURAL NETWORKS</span><span>GRADIO</span></div><div class="project-meta">Texas Instruments Engineering Innovation Challenge <span>↗</span></div></div>
-          </article>
-          <article class="project-card reveal">
-            <div class="project-art wearable-art" aria-label="Illustrative wearable sensor waveform visual">
-              <div class="project-art-title"><span>PROJECT / 03</span><span>HUMAN-CENTRED ENGINEERING</span></div>
-              <svg class="wearable-svg" viewBox="0 0 520 280" role="img" aria-label="Conceptual wrist-worn device with electrodermal and photoplethysmography waveforms">
-                <defs><linearGradient id="band-grad" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#2a4855"/><stop offset="1" stop-color="#122e3b"/></linearGradient></defs>
-                <path d="M209 12h103l18 78-8 111-14 64H213l-17-64-8-111z" fill="url(#band-grad)" stroke="#719aa8" stroke-width="1.3"/>
-                <rect x="175" y="66" width="169" height="153" rx="35" fill="#1c3e4a" stroke="#b4e4ca" stroke-width="2"/>
-                <rect x="191" y="82" width="137" height="121" rx="23" fill="#071d26" stroke="#365f67"/>
-                <path d="M204 146h21l12-20 14 42 14-32 11 10h37" stroke="#b7f899" stroke-width="3" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
-                <text x="211" y="110" fill="#91acb8" font-size="10" font-family="monospace">PPG / EDA</text><circle cx="307" cy="99" r="4" fill="#b7f899"/>
-                <path d="M23 98h112m-112 22h112m-112 22h112M385 142h112m-112 22h112m-112 22h112" stroke="#5e8f96" stroke-dasharray="2 8" opacity=".5"/>
-                <text x="23" y="84" fill="#7ca2ab" font-size="10" font-family="monospace">SIGNALS</text><text x="386" y="128" fill="#7ca2ab" font-size="10" font-family="monospace">BLE DATA</text>
-              </svg>
-              <div class="project-art-bottom"><span>EDA + PPG / WEARABLE SENSING</span><span>02–02</span></div>
-            </div>
-            <div class="project-text"><div class="project-heading-line"><p class="project-category">INTEGRATED DESIGN PROJECT</p><span class="project-award project-award-muted">PROTOTYPE</span></div><h3>Making physiological signals meaningful.</h3><p>Contributed to a wrist-worn stress-detection concept combining electrodermal activity and optical pulse sensing, with Bluetooth-based data collection and a companion application.</p><div class="project-tags"><span>EDA + PPG</span><span>ARDUINO NANO ESP32</span><span>BLE</span></div><div class="project-meta">Universiti Malaya · Team project <span>↗</span></div></div>
-          </article>
-        </div>
-        <p class="visual-disclaimer">Illustrations are schematic visualisations for the portfolio, not photographs of hardware or raw model outputs.</p>
-      </div>
-    </section>
-
-    <section class="section principle-section" id="approach"><div class="container principle-layout"><div class="principle-lead reveal"><span class="section-index">03 <span>/</span> HOW I WORK</span><p class="overline">AN ENGINEERING MINDSET</p><h2>Curiosity,<br>with <span class="serif-italic">a method.</span></h2><p>What interests me most is the space between an elegant model and a system that actually performs. I like understanding the physics, making the assumptions explicit, and testing whether the results make sense.</p></div><div class="principle-list reveal"><div class="principle-item"><span>01</span><div><h3>Ask a precise question.</h3><p>Start with the problem, the constraints, and the physical or engineering mechanism worth investigating.</p></div><span class="principle-symbol">↗</span></div><div class="principle-item"><span>02</span><div><h3>Build an explainable model.</h3><p>Choose equations, tools, and assumptions for a reason — not simply to produce a plausible-looking output.</p></div><span class="principle-symbol">↗</span></div><div class="principle-item"><span>03</span><div><h3>Compare, question, refine.</h3><p>Check trends, challenge unexpected results, and relate the findings to established engineering literature.</p></div><span class="principle-symbol">↗</span></div><div class="principle-item"><span>04</span><div><h3>Communicate the value.</h3><p>Turn technical insight into a clear explanation that researchers, engineers, and collaborators can build upon.</p></div><span class="principle-symbol">↗</span></div></div></div></section>
-
-    <section class="section background-section" id="experience"><div class="container"><div class="section-heading section-heading-simple reveal"><span class="section-index">04 <span>/</span> BACKGROUND</span><div><p class="overline">THE PATH SO FAR</p><h2 id="background-heading">Experience that <span class="serif-italic">connects.</span></h2></div></div><div class="experience-layout"><div class="experience-list reveal"><article class="experience-row"><span class="experience-dot"></span><div class="experience-top"><h3>Research internship</h3><span>TAIWAN</span></div><p>National Chung Cheng University · Engineering research and hardware-related R&D experience. Awarded A+ for the five-credit university industrial training module.</p></article><article class="experience-row"><span class="experience-dot"></span><div class="experience-top"><h3>Semiconductor training</h3><span>MALAYSIA</span></div><p>Selected for the Advanced Semiconductor Academy of Malaysia programme, with exposure to semiconductor design, testing, and the industry ecosystem.</p></article><article class="experience-row"><span class="experience-dot"></span><div class="experience-top"><h3>Electrical Engineering, B.Eng.</h3><span>2022–2026</span></div><p>Universiti Malaya · Pass with Honours. An English-medium degree covering electronics, devices, communications, power, and engineering design.</p></article></div><aside class="recognition reveal"><div class="recognition-head"><span>SELECTED RECOGNITION</span><span>↗</span></div><div class="recognition-item"><span class="recognition-number">01</span><div><strong>First Prize</strong><p>Texas Instruments Engineering Innovation Challenge</p></div></div><div class="recognition-item"><span class="recognition-number">02</span><div><strong>Silver Award</strong><p>Universiti Malaya idea festival · Semiconductor research</p></div></div><div class="recognition-item"><span class="recognition-number">03</span><div><strong>Selected Trainee</strong><p>Advanced Semiconductor Academy of Malaysia</p></div></div><div class="recognition-footer">RESEARCH · ENGINEERING · IMPACT</div></aside></div></div></section>
-
-    <section class="section about-section" id="about"><div class="container about-layout"><div class="about-visual reveal" aria-hidden="true"><div class="about-orbit orbit-one"></div><div class="about-orbit orbit-two"></div><div class="about-orbit orbit-three"></div><div class="about-symbol">J<span>—</span>Z</div><div class="about-corner top-left">EST. 2026 / UM</div><div class="about-corner bottom-right">KUALA LUMPUR / UM</div></div><div class="about-copy reveal"><span class="section-index">05 <span>/</span> ABOUT</span><p class="overline">A NOTE ABOUT THE PERSON</p><h2>There is more to<br>engineering than<br><span class="serif-italic">a clean result.</span></h2><p>My interests sit at the crossroads of semiconductor devices, numerical simulation, and intelligent engineering tools. The most rewarding work, to me, involves learning a difficult principle deeply enough to turn it into something useful.</p><p>I've learned from research discussions, failed iterations, competitions, and working with people across disciplines. That process has shaped how I approach new problems.</p><div class="about-facts"><div><span>EDUCATION</span><strong>B.Eng. Electrical Engineering</strong></div><div><span>INSTITUTION</span><strong>Universiti Malaya</strong></div><div><span>RESEARCH INTERESTS</span><strong>Electronic devices · Semiconductor AI · Modelling</strong></div></div></div></div></section>
-
-    <section class="connect-section" id="connect"><div class="container connect-layout"><div><span class="section-index">LET'S TALK <span>/</span> RESEARCH</span><h2>Good work starts<br>with a <span class="serif-italic">conversation.</span></h2><p>I'm interested in research opportunities involving semiconductor devices, electronic materials, and applied intelligence. If you received this portfolio through an email, I'd be glad to continue the conversation there.</p><div class="contact-links" id="contact-links" aria-label="Contact links"><a class="button button-primary" href="#work"><span>View featured research</span><span class="button-arrow" aria-hidden="true">↗</span></a></div></div><div class="contact-decor" aria-hidden="true"><div class="big-asterisk">✳</div><div class="circle-label">LEARN / BUILD / QUESTION / REFINE</div></div></div></section>
-  </main>
-  <footer class="footer"><div class="container footer-layout"><a href="#top" class="footer-brand">JZ<span>.</span></a><span>JUNAID ZIA · RESEARCH & ENGINEERING</span><span>BUILT WITH CURIOSITY, 2026</span><a href="#top">BACK TO TOP ↑</a></div></footer>
-  <script src="script.js" defer></script>
+    <div class="container hero-rule"><div class="hero-rule-label">SELECTED HIGHLIGHTS <span>↓</span></div><div class="highlight-row" id="highlights"></div></div>
+  </section>
+  <section class="section feature-section" id="research">
+    <div class="container"><div class="section-header"><div><div class="section-eyebrow">02 / FEATURED RESEARCH</div><h2>Research, <i>in depth.</i></h2></div><p>One problem, one method, and results that can be examined.</p></div><div id="featured-research"></div></div>
+  </section>
+  <section class="section project-section" id="projects"><div class="container"><div class="section-header"><div><div class="section-eyebrow">03 / SELECTED WORK</div><h2>Selected <i>projects.</i></h2></div><p>Browse the work by field. Every project opens its own shareable research note.</p></div><div class="filterbar" id="project-filters" aria-label="Filter projects"></div><div class="project-list" id="project-list"></div></div></section>
+  <section class="section recognition-section" id="recognition"><div class="container"><div class="section-header"><div><div class="section-eyebrow">04 / RECOGNITION</div><h2>Honours &amp; <i>distinctions.</i></h2></div><p>A selection of research recognition, engineering competitions and technical training.</p></div><div class="award-list" id="award-list"></div></div></section>
+  <section class="section background-section" id="background"><div class="container"><div class="section-header"><div><div class="section-eyebrow">05 / BACKGROUND</div><h2>Experience &amp; <i>education.</i></h2></div><p>Academic training and the teams and institutions behind the work.</p></div><div class="timeline" id="timeline"></div></div></section>
+  <section class="contact-section" id="contact"><div class="container contact-grid"><div><div class="section-eyebrow">LET'S CONNECT /</div><h2>Interested in<br><i>working together?</i></h2><p id="contact-description">I'm interested in research conversations and opportunities to build useful engineering systems.</p></div><div class="contact-action" id="contact-action"><a class="btn btn-light" href="#research">Explore my research <span aria-hidden="true">↗</span></a></div></div></section>
+</main>
+<footer><div class="container footer-inner"><a href="#top" class="footer-brand">JUNAID ZIA<span>.</span></a><p>Research portfolio · Independent personal website</p><div class="footer-links" id="footer-links"></div><a class="back-top" href="#top">Back to top ↑</a></div></footer>
+<script>/* Content and layout are configured in site-data.js and styles.css. */</script>
 </body>
 </html>

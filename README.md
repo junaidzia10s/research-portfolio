@@ -1,55 +1,56 @@
-# Junaid Zia — Research & Engineering Portfolio
+# Junaid Zia — Swiss-inspired academic research portfolio
 
-A standalone, responsive static research portfolio designed for GitHub Pages. No framework, hosting subscription, build steps, tracking scripts, or paid integrations needed.
+A self-contained, no-build, GitHub Pages website with an in-browser editor.
+Inspired by Swiss International Typographic Style and a restrained red / white / graphite airline-inspired palette; **not affiliated with any airline**.
 
-## View locally
+## What's in the folder
+- `index.html` — homepage, research/projects, clickable awards, background
+- `project.html` — shareable detail pages for each project (`project.html?project=mos2-transistors`)
+- `editor.html` — optional content/design editor; needs no account or server
+- `site-data.js` — editable single-source-of-truth for content, projects, awards, photos, fonts and colours
+- `styles.css` — styles; override typography, layout, colours if desired
+- `main.js` — rendering, project filters, awards, menu and detail pages
+- `editor.js`, `editor.css` — visual editing interface
+- `assets/` — SVG diagrams, portrait placeholder and favicon
 
-Double-click `index.html` in a browser. An internet connection is only needed to fetch the optional Google Fonts; the site works with built-in system fonts offline.
+## Publish on GitHub Pages (no build step)
+1. Unzip this package. Open your GitHub repository.
+2. Upload **the files inside this folder** to the *repository root* (not inside another nested folder), commit the changes.
+3. Under `Settings → Pages`, choose `Deploy from a branch`, `main`, and `/(root)`; Save.
+4. Open `https://YOUR-USERNAME.github.io/YOUR-REPO/` once Pages finishes building.
+5. If you are replacing the old site, upload/overwrite the old files including `index.html` in the **same repository**. Don't create a new repository.
 
-## Publish with GitHub Pages
+## Updating content WITHOUT editing code
+1. Visit `https://YOUR-USERNAME.github.io/YOUR-REPO/editor.html` or open `editor.html` locally.
+2. Use the tabs to change profile text, add/reorder projects, add awards, and customize colours/fonts.
+3. For a photo: in the editor, choose an image from your computer. It is compressed and embedded into the generated file, so you don't need to manage a separate images folder. This is best for a few optimized photos (ideally below 1 MB each after resizing). You can also type `assets/my-photo.jpg` if you prefer to upload a separate image to GitHub.
+4. Click `Preview changes` to open a temporary local-browser preview. Preview is NOT published and is visible only to your browser.
+5. Click `Download site-data.js`. It contains all your changes.
+6. On GitHub, open your repository, choose `Add file → Upload files`, drag in the new `site-data.js`, and commit it. This makes your updates public after Pages rebuilds.
 
-1. Sign into GitHub and create a **public** repository, for example `research-portfolio`.
-2. Choose **Add file → Upload files** and drag all **seven site files** from this folder (not the ZIP) into the repository root: `index.html`, `research.html`, `styles.css`, `script.js`, `favicon.svg`, `cover.png`, `.nojekyll`. The README is optional but recommended.
-3. Commit the changes to the `main` branch.
-4. Open **Settings → Pages**. Select **Deploy from a branch**, with `main` and `/(root)`, then **Save**.
-5. After GitHub publishes the page, it will be available at `https://YOUR-USERNAME.github.io/research-portfolio/`.
+IMPORTANT: because GitHub Pages is static, the editor cannot silently publish your changes to GitHub. You must upload the exported file. The editor does **not** send your images or data to a third-party service.
 
-For a shorter address, create a repository named `YOUR-USERNAME.github.io` instead; its URL will be `https://YOUR-USERNAME.github.io/`.
+## Direct editing with GitHub's web interface
+- Open `site-data.js` on GitHub and click the pencil (Edit).
+- Edit a title, paragraphs, image path, award, project, or font setting; commit.
+- Keep quotation marks and commas valid JavaScript.
 
-## Before publishing: personalise your contact links
+## Image tips
+- The bundled SVGs are **illustrations**, not authentic lab photos or experimental screenshots.
+- Replace the portrait placeholder with your own consented portrait.
+- Replace project cover diagrams with your actual COMSOL plots, wafer-classification screenshots, and wearable hardware images when possible.
+- Only publish photos, names, logos and university/industry material you are authorised to show.
+- Do not upload your private academic transcript, passport, signed recommendation letters, confidential internship notes, or any sensitive data.
 
-Open `script.js` and fill in any of these lines with your real details:
+## Where to change colours and fonts
+You can edit them visually in `editor.html`, or modify `settings` at the top of `site-data.js`:
+- `accent` — e.g. `#C8102E`
+- `background` — e.g. `#F8F8F6`
+- `headingFont` — `Manrope`, `Inter`, `DM Sans`, `IBM Plex Sans`, or `Outfit`
+- `bodyFont` — same options
 
-```js
-const CONTACT = {
-  email: 'your-confirmed-email@example.com',
-  linkedin: 'https://www.linkedin.com/in/your-profile/',
-  github: 'https://github.com/your-username',
-  cvPdf: ''
-};
-```
-
-Empty values stay hidden. After you produce the Europass CV, upload the PDF to the same repository and set `cvPdf: 'Junaid-Zia-CV.pdf'` to display a download link. Don't upload recommendation letters, full transcripts, a passport, or any unpublished manuscript without explicit permission.
-
-## Accuracy notes
-
-- The numerical chart compares only two **simulation endpoints**, at 0% and 0.7% tensile strain. No intermediate measurements are implied.
-- The wafer visualization and device illustrations are **conceptual**, not photographs, raw experiment output, or CNN inference screenshots.
-- The Taiwan industrial-training grade and degree details are corroborated by the user's university documents. Research descriptions are supplied by the portfolio owner and should be approved before public release.
-- No peer-reviewed publication, patent, or funding status is claimed.
-
-## Files
-
-- `index.html`: accessible semantic homepage
-- `research.html`: in-depth MoS₂ research case study
-- `styles.css`: responsive editorial visual design
-- `script.js`: mobile navigation, reveal animation, schematic wafer visualization, optional contact links
-- `favicon.svg`: minimalist site icon
-- `cover.png`: social sharing image
-- `.nojekyll`: tells GitHub Pages not to run Jekyll
-
-© 2026 Junaid Zia. All project and university names belong to their respective owners.
-
-## Detailed research page
-
-`research.html` provides the in-depth MoS₂ case study linked from the homepage. Check all numerical parameters and interpretations against your final FYP report before making it public. Upload `research.html` too.
+## Academic honesty
+- The data are based on user-provided academic details and letters. Check each before making the site public.
+- University and competition awards are described carefully. Never imply an in-preparation paper is published.
+- Some experience/competition dates are currently broad estimates; verify them before public release.
+- All numerical results in the MoS₂ project are explicitly **simulated** results.
